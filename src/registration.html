@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pastry Chef School</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            font-family: "Courier New";
+            font-size: 150%;
+            overflow: hidden;
+            background-image: linear-gradient(to right, rgba(213, 200, 152, 0.785), white);
+            height: 120px;
+            color: #b19e9e;
+        }
+
+        .navigation {
+            font-family: "Courier New";
+            background-image: linear-gradient(to right, rgba(213, 200, 152, 0.785), white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navigation a {
+            text-align: center;
+            text-decoration: none;
+            color: #514b4b;
+        }
+
+        .registerform {
+            font-family: 'Courier New', Courier, monospace;
+            color: #1d0404;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input:checked {
+                background-color: rgb(220, 201, 175);
+            }
+
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 35px 16px;
+            text-decoration: none;
+        }
+
+        /* Style the content */
+        .content {
+            background-color: #ddd;
+            padding: 10px;
+            height: 815px;
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <center><b>
+                <p class="topnav">Pastry Chef School</p>
+            </b></center>
+    </div>
+    <div class="navigation">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./courses.html">Courses</a>
+            <a href="./registration.html">Registration</a>
+            <a href="./contacts.html">Contacts</a>
+        </nav>
+    </div>
+        <form class = "registerform">
+            <label>First Name</label><input type="text" placeholder="Your full name">
+            <label>Last Name</label><input type="text" :: placeholder="Your full last name">
+            <label>Date of birth</label><input type="date" min="2005-01-01" max="2023-12-31">
+            <label>Personal email</label><input type="email" required>
+            <label>Email password</label><input type="password">
+            <legend></legend>
+            <fieldset>
+                <legend>About course</legend>
+                <label>Have you ever taken our courses before?</label>
+                <label>Yes</label><input type="radio" value="Yes">
+                <label>No</label><input type="radio" value="No">
+                <textarea>If you have any other experience, write about it here:</textarea>
+                <label>Which course do you like to join?</label><input list="Courses">
+                <input type="button" onclick="alert('Congrats! You choose this course!')" value="Click"><datalist
+                    id="Courses">
+                    <option value="Basic patissery certificate"></option>
+                    <option value="Cake decorating"></option>
+                    <option value="Sugar art essentials techniques"></option>
+                    <option value="Plant-based culinary arts"></option>
+                    <option value="Culinary management"></option>
+                </datalist>
+                <label for="mentor">Your mentor first name:</label>
+                <input type="text" value="John" readonly>
+                <label for="lname">Your mentor last name:</label>
+                <input type="text" value="Smith" autofocus>
+                <label>Which days do you prefer to attend course lectures?</label>
+                <input type="checkbox" id="c1" name="days">
+                <label for="c1">Monday</label><br>
+                <input type="checkbox" id="c2" name="days">
+                <label for="c2">Tuesday</label><br>
+                <input type="checkbox" id="c3" name="days">
+                <label for="c3">Friday</label>
+                <label for="weeks">How many weeks you expect to achieve course goals (from 1 to 6):</label>
+                <input type="number" id="weeks" name="weeks" min="1" max="6">
+            </fieldset>
+            <input type="image"
+                src="https://www.transparentpng.com/thumb/submit-button/1u2PSi-submit-button-free-download.png"
+                width="250px" onclick="alert('Thank you for submitting your form!')">
+        </form>
+</body>
+
+</html>
