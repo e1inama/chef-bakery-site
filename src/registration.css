@@ -1,0 +1,93 @@
+* {
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.content {
+  width: 100%;
+  font-family: Heebo;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+.content .header {
+  position: absolute;
+  z-index: 2;
+  top: 3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .header .header-logo {
+  font-family: Pacifico;
+  color: #ffba39;
+  font-size: 4vh;
+  margin-left: 3%;
+}
+.content .header .header-nav {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content .header .header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+}
+.content .header .header-call {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  cursor: pointer;
+}
+.content .header .header-call .call-text {
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  margin-right: 5%;
+}
+.content .header .header-call img {
+  width: 2.5vh;
+  height: 2.5vh;
+  margin-top: -3%;
+}
+.content .back-img {
+  object-fit: cover;
+  width: 100vw;
+}
+.content .form {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  margin-top: 10vh;
+  margin-left: 27.5vh;
+  width: 70%;
+  height: 90vh;
+  background-color: rgb(202, 194, 194);
+}
+.content .form .slogan {
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-bottom: 5%;
+  color: white;
+}
+.content .form .slogan .slogan-title {
+  font-weight: 900;
+  font-size: 8vh;
+}
+.content .form .slogan .slogan-text {
+  font-weight: 600;
+  margin-top: 1%;
+}
+.content .footer {
+  z-index: 10;
+}
+
+/*# sourceMappingURL=registration.css.map */
