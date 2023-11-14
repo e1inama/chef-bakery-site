@@ -74,7 +74,7 @@
   top: 5vh;
   width: 100vw;
   padding: 5% 0 5% 5%;
-  background-color: rgba(255, 255, 255, 0.655);
+  background-color: rgb(255, 255, 255);
   min-height: 10vh;
 }
 .content .header .topnav a {
@@ -246,5 +246,59 @@
   }
   .content .header .topnav #mylinks {
     display: block;
+  }
+  .content .slogan {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15vh;
+  }
+  .content .slogan .slogan-title {
+    font-size: 25px;
+  }
+  .content .slogan .slogan-text {
+    font-size: 20px;
+  }
+  .content .bakery {
+    top: 35vh;
+  }
+  .content .info {
+    background: linear-gradient(180deg, rgba(66, 92, 111, 0) 4%, rgb(255, 186, 57) 8%);
+    display: flex;
+    flex-direction: column;
+  }
+  .content .info div {
+    width: 75%;
+    margin-left: 5%;
+    height: auto;
+    padding: 0 0 20% 10%;
+  }
+  .content .info img {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+  }
+  .content .info footer {
+    margin-left: 0;
+    margin-top: -14vh;
+    width: 100%;
+    background-color: #495d94;
+  }
+  .content .info-1-text {
+    margin-top: 33vh;
+  }
+  .content .info-1-img {
+    margin-top: -16vh;
+  }
+  .content .info-2-text {
+    margin-top: -16vh;
+  }
+  .content .info-2-img {
+    margin-top: -16vh;
+  }
+  .content .info-3-text {
+    margin-top: -16vh;
+  }
+  .content .info-3-img {
+    margin-top: -16vh;
   }
 }/*# sourceMappingURL=style.css.map */
