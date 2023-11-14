@@ -28,6 +28,7 @@ body {
   color: #ffba39;
   font-size: 4vh;
   margin-left: 3%;
+  cursor: pointer;
 }
 .content .header .header-nav {
   width: 20%;
@@ -59,17 +60,17 @@ body {
   margin-top: -3%;
 }
 .content .back-img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100vw;
 }
 .content .form {
-  font-family: 'Courier New', Courier, monospace;
   position: absolute;
-  margin-top: 10vh;
+  margin-top: 20vh;
   margin-left: 27.5vh;
   width: 70%;
-  height: 90vh;
-  background-color: rgb(202, 194, 194);
+  height: 75vh;
+  background-color: rgb(173, 161, 161);
 }
 .content .form .slogan {
   text-align: center;
@@ -83,11 +84,10 @@ body {
   font-size: 8vh;
 }
 .content .form .slogan .slogan-text {
+  font-family: "Courier New", Courier, monospace;
   font-weight: 600;
   margin-top: 1%;
 }
 .content .footer {
   z-index: 10;
-}
-
-/*# sourceMappingURL=registration.css.map */
+}/*# sourceMappingURL=registration.css.map */
