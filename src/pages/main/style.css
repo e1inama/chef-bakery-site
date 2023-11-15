@@ -279,7 +279,7 @@
   }
   .content .info footer {
     margin-left: 0;
-    margin-top: -14vh;
+    margin-top: -10vh;
     width: 100%;
     background-color: #495d94;
   }
@@ -300,5 +300,87 @@
   }
   .content .info-3-img {
     margin-top: -16vh;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  .content {
+    overflow-x: hidden;
+  }
+  .content .clouds {
+    overflow-x: hidden;
+  }
+  .content .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content .header .header-logo {
+    font-size: 35px;
+  }
+  .content .header .header-nav {
+    display: none;
+  }
+  .content .header .header-call {
+    display: none;
+  }
+  .content .header .topnav {
+    display: block;
+  }
+  .content .header .topnav #mylinks {
+    display: block;
+  }
+  .content .slogan {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15vh;
+  }
+  .content .slogan .slogan-title {
+    font-size: 40px;
+  }
+  .content .slogan .slogan-text {
+    font-size: 25px;
+  }
+  .content .bakery {
+    top: 35vh;
+  }
+  .content .info {
+    height: 230vh;
+    background: linear-gradient(180deg, rgba(66, 92, 111, 0) 6%, rgb(255, 186, 57) 18%);
+  }
+  .content .info div {
+    width: 75%;
+    margin-left: 5%;
+    height: 550px;
+    padding: 0 0 20% 10%;
+  }
+  .content .info img {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+  }
+  .content .info footer {
+    position: absolute;
+    top: 220vh;
+    margin-left: 0;
+    width: 100%;
+    background-color: #495d94;
+  }
+  .content .info-1-text {
+    margin-top: 40vh;
+  }
+  .content .info-1-img {
+    margin-top: 55vh;
+  }
+  .content .info-2-text {
+    margin-top: -14vh;
+  }
+  .content .info-2-img {
+    margin-top: -4vh;
+  }
+  .content .info-3-text {
+    margin-top: -22vh;
+  }
+  .content .info-3-img {
+    margin-top: -5vh;
   }
 }/*# sourceMappingURL=style.css.map */

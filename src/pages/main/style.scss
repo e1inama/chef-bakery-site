@@ -343,7 +343,7 @@ $background-color_2: #04AA6D;
 
             footer {
                 margin-left: 0;
-                margin-top: -14vh;
+                margin-top: -10vh;
                 width: 100%;
                 background-color: #495d94;
             }
@@ -375,4 +375,116 @@ $background-color_2: #04AA6D;
         }
 
     }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+
+    .content {
+        overflow-x: hidden;
+
+        .clouds {
+            overflow-x: hidden;
+
+            .clouds-img {}
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .header-logo {
+                font-size: 35px;
+            }
+
+            .header-nav {
+                display: none;
+            }
+
+            .header-call {
+                display: none;
+            }
+
+            .topnav {
+                display: block;
+
+                #mylinks {
+                    display: block;
+                }
+            }
+        }
+
+        .slogan {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 15vh;
+
+            .slogan-title {
+                font-size: 40px;
+            }
+
+            .slogan-text {
+                font-size: 25px;
+            }
+        }
+
+        .bakery {
+            top: 35vh;
+        }
+
+        .info {
+            height: 230vh;
+            background: linear-gradient(180deg, rgba(66, 92, 111, 0) 6%, rgba(255, 186, 57, 100) 18%);
+
+            div {
+                width: 75%;
+                margin-left: 5%;
+                height: 550px;
+                padding: 0 0 20% 10%;
+            }
+
+            img {
+                width: 95%;
+                height: auto;
+                margin-left: 2.5%;
+            }
+
+            footer {
+                position: absolute;
+                top: 220vh;
+                margin-left: 0;
+                //margin-top: -30vh;
+                width: 100%;
+                background-color: #495d94;
+            }
+
+        }
+
+        .info-1-text {
+            margin-top: 40vh;
+        }
+
+        .info-1-img {
+            margin-top: 55vh;
+        }
+
+        .info-2-text {
+            margin-top: -14vh;
+        }
+
+        .info-2-img {
+            margin-top: -4vh;
+        }
+
+        .info-3-text {
+            margin-top: -22vh;
+        }
+
+        .info-3-img {
+            margin-top: -5vh;
+        }
+
+    }
+
 }
