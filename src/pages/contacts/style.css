@@ -45,6 +45,7 @@
 .content .header .topnav #myLinks {
   display: none;
   position: absolute;
+  z-index: 10;
   top: 5vh;
   width: 100vw;
   padding: 5% 0 5% 5%;
@@ -88,7 +89,11 @@
   margin-top: -3%;
 }
 .content .back-img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+  height: 120vh;
   overflow-x: hidden;
   position: absolute;
   z-index: 1;
@@ -172,6 +177,42 @@
   }
   .content .header .topnav #mylinks {
     display: block;
+  }
+  .content .back-img {
+    height: 130vh;
+  }
+  .content .main-info .delivery {
+    transition: 3s ease-in-out;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ff8839;
+    transform: translate(-65vw);
+  }
+  .content .main-info .delivery .delivery-title {
+    font-size: 25px;
+  }
+  .content .main-info .delivery .phone {
+    font-size: 25px;
+  }
+  .content .main-info .delivery .delivery-img {
+    width: 10%;
+  }
+  .content .main-info .carousel-bootstrap {
+    flex-direction: column;
+    width: 300px;
+    margin-left: 10%;
+    margin-top: 15%;
+  }
+  .content .main-info .carousel-bootstrap h3 {
+    color: #495d94;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 10%;
+  }
+  .content .main-info .carousel-bootstrap .products {
+    margin-left: 5%;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 959px) {

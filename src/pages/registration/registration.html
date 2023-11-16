@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;400;600;900&family=Pacifico&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="registration.css">
     <title>Chef-bakery</title>
 </head>
@@ -21,62 +25,79 @@
                 <a href="#">Registration</a>
                 <a href="../contacts/contacts.html">Bakery</a>
             </nav>
+            <div class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="myLinks">
+                    <a href="../main/main.html">Main</a>
+                    <a href="../registration/registration.html">Registration</a>
+                    <a href="../contacts/contacts.html">Bakery</a>
+                </div>
+            </div>
             <div class="header-call">
                 <h1 class="call-text">Call us</h1>
                 <img src="../../assets/img/phone-icon.png" alt="#">
             </div>
         </header>
         <img class="back-img" src="../../assets/img/bakery.jpg" alt="bakery">
-        <form class="form">
-            <div class="slogan">
+        <form id="registrationForm" class="form">
+            <!-- <div class="slogan">
                 <h1 class="slogan-title">
                     Registration form
                 </h1>
                 <h2 class="slogan-text">
                     Fill in the fields below to take part
                 </h2>
-            </div>
-            <br><label>First Name</label><input type="text" placeholder="Your full name">
-            <br><label>Last Name</label><input type="text" :: placeholder="Your full last name">
-            <br><label>Date of birth</label><input type="date" min="2005-01-01" max="2023-12-31">
-            <br><label>Personal email</label><input type="email" required>
-            <br><label>Email password</label><input type="password">
-            <br>
-            <legend></legend>
+            </div> -->
+            <legend>Registration form</legend>
+            <label>First Name: </label><input id="firstName" type="text" placeholder="Your full name" required><br>
+            <label>Last Name: </label><input id="lastName" type="text" :: placeholder="Your full last name"
+                required><br>
+            <label>Date of birth: </label><input type="date" min="2005-01-01" max="2023-12-31"><br>
+            <label>Personal email: </label><input id="email" type="email" required>
+            <label>Email password: </label><input type="password">
             <fieldset>
                 <legend>About course</legend>
                 <label>Have you ever taken our courses before?</label>
                 <label>Yes</label><input type="radio" value="Yes" name="1">
                 <label>No</label><input type="radio" value="No" name="1">
-                <br><textarea>If you have any other experience, write about it here:</textarea>
-                <br><label>Which course do you like to join?</label><input list="Courses">
-                <input type="button" onclick="alert('Congrats! You choose this course!')" value="Click"><datalist
-                    id="Courses">
+                <textarea>If you have any other experience, write about it here:</textarea><br>
+                <label>Which course do you like to join?</label><input list="Courses">
+                <input class="click" type="button" onclick="alert('Congrats! You choose this course!')" value="Click">
+                <datalist id="Courses">
                     <option value="Basic patissery certificate"></option>
                     <option value="Cake decorating"></option>
                     <option value="Sugar art essentials techniques"></option>
                     <option value="Plant-based culinary arts"></option>
                     <option value="Culinary management"></option>
-                </datalist>
+                </datalist><br>
                 <label for="mentor">Your mentor first name:</label>
                 <input type="text" value="John" readonly>
                 <label for="lname">Your mentor last name:</label>
-                <input type="text" value="Smith" autofocus>
+                <input type="text" value="Smith" autofocus><br>
                 <label>Which days do you prefer to attend course lectures?</label>
                 <input type="checkbox" id="c1" name="days">
-                <label for="c1">Monday</label><br>
+                <label for="c1">Monday</label>
                 <input type="checkbox" id="c2" name="days">
-                <label for="c2">Tuesday</label><br>
+                <label for="c2">Tuesday</label>
                 <input type="checkbox" id="c3" name="days">
-                <label for="c3">Friday</label>
+                <label for="c3">Friday</label><br>
                 <label for="weeks">How many weeks you expect to achieve course goals (from 1 to 6):</label>
                 <input type="number" id="weeks" name="weeks" min="1" max="6">
             </fieldset>
-            <input type="image"
-                src="https://www.transparentpng.com/thumb/submit-button/1u2PSi-submit-button-free-download.png"
-                width="250px" onclick="alert('Thank you for submitting your form!')">
+            <input class="btn btn-primary" type="submit" value="Submit">
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 <script src="../../utils/script.js"></script>
 

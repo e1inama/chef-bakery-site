@@ -56,6 +56,7 @@ $background-color_2: #04AA6D;
             #myLinks {
                 display: none;
                 position: absolute;
+                z-index: 10;
                 top: 5vh;
                 width: 100vw;
                 padding: 5% 0 5% 5%;
@@ -110,7 +111,10 @@ $background-color_2: #04AA6D;
     }
 
     .back-img {
+        position: absolute;
+        object-fit: cover;
         width: 100%;
+        height: 120vh;
         overflow-x: hidden;
         position: absolute;
         z-index: 1;
@@ -217,6 +221,62 @@ $background-color_2: #04AA6D;
                     display: block;
                 }
             }
+        }
+
+        .back-img {
+            
+            height: 130vh;
+        }
+
+        .main-info {
+            
+    
+            .main-slogan {
+                
+            }
+    
+            .delivery {
+                transition: 3s ease-in-out;
+                margin-top: 3%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                color: #ff8839;
+                transform: translate(-65vw);
+    
+                .delivery-title {
+                    font-size: 25px;
+                }
+    
+                .phone {
+                    font-size: 25px;
+                }
+    
+                .delivery-img {
+    
+                    width: 10%;
+                }
+            }
+    
+            .carousel-bootstrap {
+                flex-direction: column;
+                width: 300px;
+                margin-left: 10%;
+                margin-top: 15%;
+    
+                h3 {
+                    color: #495d94;
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin-right: 10%;
+                }
+    
+                .products {
+                    margin-left: 5%;
+                }
+                
+            }
+    
         }
 
     }

@@ -5,7 +5,7 @@
 }
 
 body {
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .content {
@@ -25,7 +25,7 @@ body {
 }
 .content .header .header-logo {
   font-family: Pacifico;
-  color: #ffba39;
+  color: white;
   font-size: 4vh;
   margin-left: 3%;
   cursor: pointer;
@@ -41,6 +41,38 @@ body {
   text-decoration: none;
   font-size: 20px;
   font-weight: 300;
+}
+.content .header .topnav {
+  display: none;
+  width: 10vw;
+}
+.content .header .topnav #myLinks {
+  display: none;
+  position: absolute;
+  top: 5vh;
+  width: 100vw;
+  padding: 5% 0 5% 5%;
+  background-color: rgb(255, 255, 255);
+  min-height: 10vh;
+}
+.content .header .topnav a {
+  display: block;
+  padding-bottom: 3%;
+  color: #495d94;
+  text-decoration: none;
+  font-size: 20px;
+}
+.content .header .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.content .header .topnav a.icon {
+  width: 8%;
+  background: transparent;
+}
+.content .header .active {
+  background-color: #04AA6D;
+  color: white;
 }
 .content .header .header-call {
   display: flex;
@@ -60,34 +92,94 @@ body {
   margin-top: -3%;
 }
 .content .back-img {
+  position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100vw;
+  height: 150%;
 }
 .content .form {
   position: absolute;
-  margin-top: 20vh;
-  margin-left: 27.5vh;
+  margin-top: 12vh;
+  margin-left: 15%;
+  padding: 3% 5% 3% 5%;
   width: 70%;
-  height: 75vh;
-  background-color: rgb(173, 161, 161);
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.878);
+  border-radius: 15px;
+  font-family: Heebo;
+  font-weight: 300;
+  font-size: 2.4vh;
 }
-.content .form .slogan {
+.content .form legend {
   text-align: center;
-  margin-top: 2%;
-  margin-left: 1%;
+  color: #ff9239;
+  font-size: 4vh;
+  font-weight: 600;
   margin-bottom: 5%;
+}
+.content .form fieldset {
+  padding-left: 2%;
+  margin-top: 3%;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin-bottom: 3%;
+}
+.content .form fieldset textarea {
+  width: 25vw;
+}
+.content .form fieldset .click {
+  background: lightblue;
+  border: none;
   color: white;
 }
-.content .form .slogan .slogan-title {
-  font-weight: 900;
-  font-size: 8vh;
-}
-.content .form .slogan .slogan-text {
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  margin-top: 1%;
+.content .form .btn {
+  margin-left: 80%;
+  height: 50px;
+  width: 15%;
 }
 .content .footer {
   z-index: 10;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    overflow-x: hidden;
+  }
+  .content .clouds {
+    overflow-x: hidden;
+  }
+  .content .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content .header .header-logo {
+    font-size: 25px;
+  }
+  .content .header .header-nav {
+    display: none;
+  }
+  .content .header .header-call {
+    display: none;
+  }
+  .content .header .topnav {
+    display: block;
+  }
+  .content .header .topnav #mylinks {
+    display: block;
+  }
+  .content .back-img {
+    height: 200vh;
+  }
+  .content .bakery {
+    top: 35vh;
+  }
+  .content .form {
+    height: 170vh;
+  }
+  .content .form .btn {
+    margin-left: 30%;
+    width: 40%;
+  }
 }/*# sourceMappingURL=registration.css.map */
