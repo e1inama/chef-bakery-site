@@ -1,0 +1,234 @@
+* {
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+$color_1: white;
+$color_2: black;
+$background-color_1: #ddd;
+$background-color_2: #04AA6D;
+
+body {
+    overflow-x: hidden;
+}
+
+.content {
+    width: 100%;
+    font-family: Heebo;
+    font-weight: 500;
+    overflow-x: hidden;
+
+    .header {
+        position: absolute;
+        z-index: 2;
+        top: 3%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .header-logo {
+            font-family: Pacifico;
+            //color: #5e6579;
+            color: white;
+            font-size: 4vh;
+            margin-left: 3%;
+            cursor: pointer;
+        }
+
+        .header-nav {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            a {
+                color: white;
+                //color: #ffba39;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+
+        .topnav {
+            display: none;
+            width: 10vw;
+
+            #myLinks {
+                display: none;
+                position: absolute;
+                top: 5vh;
+                width: 100vw;
+                padding: 5% 0 5% 5%;
+                background-color: rgba(255, 255, 255);
+                min-height: 10vh;
+            }
+
+            a {
+                display: block;
+                padding-bottom: 3%;
+                color: #495d94;
+                text-decoration: none;
+                font-size: 20px;
+
+                &:hover {
+                    background-color: $background-color_1;
+                    color: $color_2;
+                }
+            }
+
+            a.icon {
+                width: 8%;
+                background: transparent;
+            }
+        }
+
+        .active {
+            background-color: $background-color_2;
+            color: $color_1;
+        }
+
+        .header-call {
+            display: flex;
+            align-items: center;
+            width: 10%;
+            cursor: pointer;
+
+            .call-text {
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+                margin-right: 5%;
+            }
+
+            img {
+                width: 2.5vh;
+                height: 2.5vh;
+                margin-top: -3%;
+            }
+        }
+    }
+
+    .back-img {
+        position: absolute;
+        object-fit: cover;
+        width: 100vw;
+        height: 150%;
+    }
+
+    .form {
+
+        position: absolute;
+        margin-top: 12vh;
+        margin-left: 15%;
+        padding: 3% 5% 3% 5%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.878);
+        border-radius: 15px;
+        font-family: Heebo;
+        font-weight: 300;
+        font-size: 2.4vh;
+
+        legend {
+            text-align: center;
+            color: #ff9239;
+            font-size: 4vh;
+            font-weight: 600;
+            margin-bottom: 5%;
+        }
+
+        fieldset {
+            padding-left: 2%;
+            margin-top: 3%;
+            border: 3px solid white;
+            border-radius: 10px;
+            margin-bottom: 3%;
+
+            textarea {
+                width: 25vw;
+            }
+
+            .click {
+                background: lightblue;
+                border: none;
+                color: white;
+            }
+        }
+
+        .btn {
+            margin-left: 80%;
+            height: 50px;
+            width: 15%;
+        }
+
+    }
+
+
+    .footer {
+        z-index: 10;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .content {
+        overflow-x: hidden;
+
+        .clouds {
+            overflow-x: hidden;
+
+            .clouds-img {}
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .header-logo {
+                font-size: 25px;
+            }
+
+            .header-nav {
+                display: none;
+            }
+
+            .header-call {
+                display: none;
+            }
+
+            .topnav {
+                display: block;
+
+                #mylinks {
+                    display: block;
+                }
+            }
+        }
+
+        .back-img {
+            height: 200vh;
+        }
+
+
+
+        .bakery {
+            top: 35vh;
+        }
+
+        .form {
+            height: 170vh;
+
+            .btn {
+                margin-left: 30%;
+                width: 40%;
+            }
+        }
+
+    }
+}

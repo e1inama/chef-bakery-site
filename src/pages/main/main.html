@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;400;600;900&family=Pacifico&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Chef-bakery</title>
 </head>
@@ -15,18 +16,28 @@
 <body>
     <div class="content">
         <div class="clouds">
-            <img src="../src/assets/img/pink-clouds.jpg" class="clouds-img">
+            <img src="../../assets/img/pink-clouds.jpg" class="clouds-img">
         </div>
         <header class="header">
-            <h1 class="header-logo">Elina's Bakery</h1>
+            <h1 class="header-logo" id="logo">Elina's Bakery</h1>
             <nav class="header-nav">
-                <a href="#">Main</a>
-                <a href="../src/registration.html">Registration</a>
-                <a href="../src/contacts.html">Contacts</a>
+                <a href="./main.html">Main</a>
+                <a href="../registration/registration.html">Registration</a>
+                <a href="../contacts/contacts.html">Bakery</a>
             </nav>
+            <div class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="myLinks">
+                    <a href="./main.html">Main</a>
+                    <a href="../registration/registration.html">Registration</a>
+                    <a href="../contacts/contacts.html">Contacts</a>
+                </div>
+            </div>
             <div class="header-call">
                 <h1 class="call-text">Call us</h1>
-                <img src="../src/assets/img/phone-icon.png" alt="#">
+                <img src="../../assets/img/phone-icon.png" alt="#">
             </div>
         </header>
         <div class="slogan">
@@ -38,7 +49,7 @@
             </h2>
         </div>
         <div class="bakery">
-            <img src="../src/assets/img/bakery.png" alt="bakery">
+            <img src="../../assets/img/bakery.png" alt="bakery">
         </div>
         <div class="info">
             <div class="info-1-text">
@@ -51,20 +62,21 @@
                     bonus module on how to frost a cake with smooth buttercream.
                 </p>
             </div>
-            <img class="info-1-img" src="../src/assets/img/Cake-Decorating.jpg" alt="cake-decor">
+            <img class="info-1-img" src="../../assets/img/Cake-Decorating.jpg" alt="cake-decor">
             <div class="info-2-text">
                 <h2 class="info-title">Sugar art essentials techniques </h2>
                 <p class="info-description">
                     Sugar work, also known as sugar art, is a fascinating field that combines creativity, precision,
-                    and science. Whether it's creating intricate sugar sculptures, sugar artists rely on specialized tools and techniques to bring their artistic visions
+                    and science. Whether it's creating intricate sugar sculptures, sugar artists rely on specialized
+                    tools and techniques to bring their artistic visions
                     to life. In this article, we will delve into the science behind sugar work, explore the essential
                     tools used by sugar artists, and discover the techniques that elevate their creations to
                     masterpieces.
                 </p>
             </div>
-            <img class="info-2-img" src="../src/assets/img/sugar art.webp" alt="sugar-art">
+            <img class="info-2-img" src="../../assets/img/sugar art.webp" alt="sugar-art">
             <div class="info-3-text">
-                <h2 class="info-title">Plant-based culinary arts</h2>
+                <h2 class="info-title">Plant culinary arts</h2>
                 <p class="info-description">
                     By taking this course you will master vegan cooking at home, using simple ingredients and easy
                     recipes.
@@ -75,12 +87,13 @@
                     options to eat at home or take to work.
                 </p>
             </div>
-            <img class="info-3-img" src="../src/assets/img/culinary.jpg" alt="culinary">
+            <img class="info-3-img" src="../../assets/img/culinary.jpg" alt="culinary">
             <footer>
                 Copyright 2023 Elina's Bakery. Terms & Privacy
             </footer>
         </div>
     </div>
 </body>
+<script src="../../utils/script.js"></script>
 
 </html>
